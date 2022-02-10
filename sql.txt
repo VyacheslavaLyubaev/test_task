@@ -1,0 +1,14 @@
+create database testDB;
+create table post(
+    userId int,
+    id int primary key,
+    title varchar(255),
+    body text
+);
+create table comment(
+    postId int,
+    id int primary key,
+    name varchar(255),
+    email varchar(255),
+    body text
+);
